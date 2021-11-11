@@ -44,3 +44,21 @@ course =  dic4.get('magic')
 print(course) #None
 course =  dic4.get('course').get('magic')
 print(course) #90
+
+#update() 使用来自dic的键/值更新字典，覆盖原有的值。入参；dc字典对象，必传
+print(dic4)
+dic4.update({"hobby":"cooking", "course":{"magic":90, "python":100}})
+print(dic4)
+print("------------------------------------------------")
+#pop() 删除指定key的键值对，并返回对应的value值。 入参：key必传。返回：如果key在字典中，则将其移除并返回value值，如果key不在字典中，则会引发keyerror
+#已经存在的key
+val = dic4.pop('age')
+print(dic4, val)
+#不存在的key
+#val2 = dic4.pop('few')
+#print(dic4, val2)
+
+"""练习：将key和value分别进行对调"""
+dict = {'a':1,'b':2,'c':3,'d':4}
+new_dict = {v:k for k,v in dict.items()}
+print(new_dict)
