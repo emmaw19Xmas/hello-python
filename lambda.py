@@ -7,7 +7,7 @@
 语法：
 result = lambda [arg1 [, arg2, .... , argm]]: expression
 """
-import math
+import logCurrentTime
 result = lambda r:math.pi*r*r
 
 print(result(10))
