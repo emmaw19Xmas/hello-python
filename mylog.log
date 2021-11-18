@@ -1,0 +1,5 @@
+2021-11-17 20:36:01,231 - logger.py - DEBUG - debug message
+2021-11-17 20:36:01,231 - logger.py - INFO - info message
+2021-11-17 20:36:01,231 - logger.py - WARNING - warn message
+2021-11-17 20:36:01,231 - logger.py - ERROR - error message
+2021-11-17 20:36:01,231 - logger.py - CRITICAL - critical message

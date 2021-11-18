@@ -5,7 +5,7 @@
 
 import logging
 #logging 默认设置的级别是warning，所以等级低于warning的日志都不会被打印。
-logging.basicConfig(filename='example.log',  level=logging.DEBUG, format=' %(asctime)s - %(levelname)s -%(message)s')
+logging.basicConfig(filename='example.log',  level=logging.DEBUG, format=' %(asctime)s - %(levelname)s -%(message)s ()')
 logging.warning("watch out")
 logging.info('I told you so')
 print("=================================================")
