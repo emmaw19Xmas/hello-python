@@ -20,7 +20,7 @@ def get_excel():
     print(values)
     return values
 
-# class TestWithEXCEL:
-#     @pytest.mark.parametrize('x,y,expected', [[1,2,4]])
-#     def test_add(self, x, y, expected):
-#         assert my_add(int(x), int(y)) == int(expected)
+class TestWithEXCEL:
+     @pytest.mark.parametrize('x,y,expected', [[1,2,4]])
+     def test_add(self, x, y, expected):
+         assert my_add(int(x), int(y)) == int(expected)
