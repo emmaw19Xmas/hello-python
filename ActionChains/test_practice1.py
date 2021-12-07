@@ -10,7 +10,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 
 
-class test_ActionChain():
+class TestActionChain():
     def setup(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(5)
