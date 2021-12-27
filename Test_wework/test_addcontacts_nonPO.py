@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : 18635
 # @Time    : 12/25/2021 9:25 PM
-# @Function:
+# @Function: 传统方法编写测试用例
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
