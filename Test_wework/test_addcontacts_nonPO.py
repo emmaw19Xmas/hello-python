@@ -28,7 +28,7 @@ class Test_Add_Contacts():
         self.driver.implicitly_wait(20)
 
     def teardown(self):
-        self.driver.quit()
+        pass
 
     def test_build_a_trip(self):
         print("添加一个新联系人")

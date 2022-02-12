@@ -10,7 +10,10 @@
 3. 重启app
 
 """
-from appium.webdriver import webdriver
+
+from appium import webdriver
+from appium.webdriver.common.mobileby import MobileBy
+import pytest
 
 from Test_wework.page.MainPage import MainPage
 
@@ -34,10 +37,19 @@ class App:
         self.driver.implicitly_wait(20)
 
         return self
+
     def restart(self):
-        pass
+        self.driver.quit()
+
     def stop(self):
         pass
+    '''
+    '''
+    """
+    """
 
     def goto_main(self):
-        return MainPage() #MainPage应该被创建在po level, 即page level
+        return MainPage(self.driver)  # MainPage应该被创建在po level, 即page level
+
+    def page_source(self):
+        return self.driver.page_source

@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"exe": "test_bin -a -b -gpu 3 -d -e, timeout  10"},
+    {"exe": "test_bin -b -gpu   3 -d -e, timeout 20"},
+    {"exe": "test_bin  -b -gpu -d -e, timeout  20"},
+    {"exe": "test_bin -a -c -gpu  4  -d, timeout 30"},
+    {"exe": "test_bin -b -gpu    3a -d   -e, timeout 20"},
+    {"exe": "test_bin -b -gpu    13 -d   -e, timeout 20"}
+  ]
+}
